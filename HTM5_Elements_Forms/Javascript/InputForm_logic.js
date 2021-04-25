@@ -26,3 +26,14 @@ if(nameRegex.test(email.value))
     else 
     emailError.textContent = "Invalid Email address";
 });
+
+// UC3 TelPhone number validation
+const tel = document.querySelector('#tel');
+const telError = document.querySelector('.tel-error');
+tel.addEventListener('input', function () {
+    let telRegex = RegExp('^[0-9]{2}[ ][0-9]{10}$');
+    if (telRegex.test(tel.value)) 
+        telError.textContent = "";
+    else 
+        telError.textContent = "Invalid telephone number";
+});
