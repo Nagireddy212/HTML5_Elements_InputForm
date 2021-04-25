@@ -38,7 +38,7 @@ tel.addEventListener('input', function () {
         telError.textContent = "Invalid telephone number";
 });
 
-// UC4 validation password
+// UC5 password complete validation
 const pwd = document.querySelector('#pwd');
 const pwdError = document.querySelector('.pwd-error');
 pwd.addEventListener('input', function () {
