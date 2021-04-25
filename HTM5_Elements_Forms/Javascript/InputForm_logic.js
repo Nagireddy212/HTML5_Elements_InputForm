@@ -1,3 +1,11 @@
+const salary = document.querySelector('#salary');
+const output =document.querySelector('.salary-output');
+output.textContent = salary.value;
+salary.addEventListener('input', () => {
+output.textContent = salary.value;
+});
+
+// UC1 FirstName validation
 const text = document.querySelector('#text'); //storing the value using id=text
 const textError = document.querySelector('.text-error'); //similarly getting output for texterror 
 text.addEventListener('input', () => {
@@ -8,14 +16,7 @@ text.addEventListener('input', () => {
         textError.textContent = "Name is Incorrect";
 });
 
-const salary = document.querySelector('#salary');
-const output =document.querySelector('.salary-output');
-output.textContent = salary.value;
-salary.addEventListener('input', () => {
-output.textContent = salary.value;
-});
-
-// UC1 Email validation
+// UC2 Email validation
 const email = document.querySelector('#email');
 const emailError = document.querySelector('.email-error');
 email.addEventListener('input', function () {
