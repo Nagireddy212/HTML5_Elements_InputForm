@@ -42,7 +42,7 @@ tel.addEventListener('input', function () {
 const pwd = document.querySelector('#pwd');
 const pwdError = document.querySelector('.pwd-error');
 pwd.addEventListener('input', function () {
-    let pwdRegex = RegExp('^{8,}$');
+    let pwdRegex = RegExp('^(?=.*[A-Z])(?=.*[0-9]).{8,}$');
     if (pwdRegex.test(pwd.value))
         pwdError.textContent = "";
     else
