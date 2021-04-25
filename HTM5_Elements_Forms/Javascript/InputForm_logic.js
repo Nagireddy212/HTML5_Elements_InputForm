@@ -19,7 +19,7 @@ text.addEventListener('input', () => {
 // UC2 Email validation
 const email = document.querySelector('#email');
 const emailError = document.querySelector('.email-error');
-email.addEventListener('input', function () {
+email.addEventListener('input', () => {
 let nameRegex = RegExp("^([a-zA-z]+)([a-zA-Z0-9_\.\-]+)@([a-z]+)\.([a-zA-Z]{2,4})\.([a-zA-Z]{2})?$");
 if(nameRegex.test(email.value))
         emailError.textContent = "";
@@ -30,7 +30,7 @@ if(nameRegex.test(email.value))
 // UC3 TelPhone number validation
 const tel = document.querySelector('#tel');
 const telError = document.querySelector('.tel-error');
-tel.addEventListener('input', function () {
+tel.addEventListener('input', () => {
     let telRegex = RegExp('^[0-9]{2}[ ][0-9]{10}$');
     if (telRegex.test(tel.value)) 
         telError.textContent = "";
@@ -41,7 +41,7 @@ tel.addEventListener('input', function () {
 // UC4 validation password
 const pwd = document.querySelector('#pwd');
 const pwdError = document.querySelector('.pwd-error');
-pwd.addEventListener('input', function () {
+pwd.addEventListener('input', () => {
     let pwdRegex = RegExp('^(?=.*[A-Z])(?=.*[0-9]).{8,}$');
     if (pwdRegex.test(pwd.value))
         pwdError.textContent = "";
