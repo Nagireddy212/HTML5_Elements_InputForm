@@ -20,7 +20,7 @@ text.addEventListener('input', () => {
 const email = document.querySelector('#email');
 const emailError = document.querySelector('.email-error');
 email.addEventListener('input', () => {
-let nameRegex = RegExp("^([a-zA-z]+)([a-zA-Z0-9_\.\-]+)@([a-z]+)\.([a-zA-Z]{2,4})\.([a-zA-Z]{2})?$");
+let nameRegex = RegExp("^([A-Za-z0-9]+[.+-]?[A-Za-z0-9]+)+[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}[.]?[a-zA-Z]{0,3}");
 if(nameRegex.test(email.value))
         emailError.textContent = "";
     else 
@@ -38,7 +38,7 @@ tel.addEventListener('input', () => {
         telError.textContent = "Invalid telephone number";
 });
 
-// UC4 validation password
+// UC5 password complete validation
 const pwd = document.querySelector('#pwd');
 const pwdError = document.querySelector('.pwd-error');
 pwd.addEventListener('input', () => {
