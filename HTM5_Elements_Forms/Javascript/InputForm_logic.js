@@ -26,8 +26,6 @@ if(nameRegex.test(email.value))
     else 
     emailError.textContent = "Invalid Email address";
 });
-<<<<<<< HEAD
-=======
 
 // UC3 TelPhone number validation
 const tel = document.querySelector('#tel');
@@ -39,4 +37,14 @@ tel.addEventListener('input', function () {
     else 
         telError.textContent = "Invalid telephone number";
 });
->>>>>>> UC3
+
+// UC4 validation password
+const pwd = document.querySelector('#pwd');
+const pwdError = document.querySelector('.pwd-error');
+pwd.addEventListener('input', function () {
+    let pwdRegex = RegExp('^{8,}$');
+    if (pwdRegex.test(pwd.value))
+        pwdError.textContent = "";
+    else
+        pwdError.textContent = "password is not Valid";
+});
