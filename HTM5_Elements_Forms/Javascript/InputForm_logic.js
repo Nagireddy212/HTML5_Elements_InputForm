@@ -14,14 +14,3 @@ output.textContent = salary.value;
 salary.addEventListener('input', () => {
 output.textContent = salary.value;
 });
-
-// UC1 Email validation
-const email = document.querySelector('#email');
-const emailError = document.querySelector('.email-error');
-email.addEventListener('input', function () {
-let nameRegex = RegExp("^([a-zA-z]+)([a-zA-Z0-9_\.\-]+)@([a-z]+)\.([a-zA-Z]{2,4})\.([a-zA-Z]{2})?$");
-if(nameRegex.test(email.value))
-        emailError.textContent = "";
-    else 
-    emailError.textContent = "Invalid Email address";
-});
