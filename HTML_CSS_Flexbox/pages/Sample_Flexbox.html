@@ -1,0 +1,89 @@
+<html lang="en">
+    <head>
+        <title>CodePen - Demo Flexbox 3</title>
+        <style>
+          body { padding: 2em;}
+          .headerContainer{
+              display: flex;
+              flex-flow: column wrap;
+              align-content: center;
+              background: tomato;
+              font-weight: bold;
+              padding: 10px;
+          }
+          .footer{
+              display: flex;
+              flex-flow: column wrap;
+              align-content: center;
+              background:lightgreen;
+              font-weight: bold;
+              padding: 10px;
+          }
+          
+          .mainContainer{
+              display: flex;
+              flex-flow: row wrap;
+              font-weight: bold;
+              text-align: center;
+          }
+          .mainContentItem{
+              text-align: left;
+              background: deepskyblue;
+          }
+          article{
+              padding: 10px;
+              margin: 10px;
+              background: aqua;
+          }
+          .sideBarLeftItem
+          {
+              background: gold;
+          }
+          .sideBarRightItem
+          {
+             background: hotpink;
+          }
+          .sideBarItem { flex: 1 0 0; border: 0px solid green; }
+          .mainContentItem { flex: 3 0px; }
+          .sideBarLeftItem { order: 1; }
+          .mainContentItem { order: 2; }
+          .sideBarRightItem { order: 3; }
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"> HEADER - Sample Flexbox Example </header>
+        <div class="mainContainer">
+        <section class="mainContentItem">
+
+              <article>
+                <h2>First article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny packportland everyday carry vinyl typewriter.
+                        Tacos PBR&B pork belly, evryday carry annual picked sriacha bormcore hashing polaroid single-origin cofee cold-pressed.
+                        PBR&B tattooed trust fund twee,leggings salvia iPhone photo booth health goth gastropub hammock.
+                    </p>
+              </article>
+
+              <article>
+                <h2>Second article </h2>
+                  <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny packportland everyday carry vinyl typewriter.
+                     Tacos PBR&B pork belly, evryday carry annual picked sriacha bormcore hashing polaroid single-origin cofee cold-pressed.
+                     PBR&B tattooed trust fund twee,leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+              </article>
+
+              <article>
+                <h2>Third article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny packportland everyday carry vinyl typewriter.
+                    Tacos PBR&B pork belly, evryday carry annual picked sriacha bormcore hashing polaroid single-origin cofee cold-pressed.
+                    PBR&B tattooed trust fund twee,leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+                <p>Cray food truck brunch,XOXO+1 keffiyech pickled chambray waistcoat ennui.Oraganic small batch paleo 8bit. Intelligentsia umami wayfayers pickled,asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it.
+                    Listicle pickled man bun cornhole heirloom art party. </p>
+              </article>
+            
+        </section>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+    </div>
+    <footer class="footer">Footer</footer>
+ <script type="text/javascript"></script>    
+</body>
+</html>
